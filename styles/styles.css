@@ -1,0 +1,75 @@
+
+body{
+    background-color: peru ;
+    font-family: sans-serif;
+}
+
+nav ul{
+    display:flex;
+    justify-content: end;
+    font-size: 1.5em;
+}
+
+nav ul li{
+    background-color: peru;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5em;
+    padding: 0.2em
+}
+
+header{
+    display: block;
+    border: 2px solid black;
+    background-image: url("../images/selva_800x600_12_3.gif");
+    height: 100px;
+}
+
+header h1{
+    color: #556b2f;
+}
+
+header a{
+    text-decoration: none;
+}
+
+main section > div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    margin-right: 2em;
+}
+
+h1{
+    margin: auto;
+    padding: 0.3em;
+    border: 2px solid black;
+    border-radius: 5em;
+    width: auto;
+    background-color: peru;
+}
+    
+header{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h2, ul {
+    color: #556b2f;
+}
+main section ul li {
+    color: black;
+}
+
+section{
+    display: block;
+    border: 2px solid black;
+    padding: 0.2em;
+}
+
+a:link {color: black;}  
+a:visited {color: black}  
+a:hover {color: #556b2f}  
+a:active {color: black}  
