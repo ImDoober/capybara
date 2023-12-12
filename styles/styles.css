@@ -1,7 +1,8 @@
 
 body{
     background-color: peru ;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/selva_800x600_12_3.gif");
 }
 
 nav ul{
@@ -10,20 +11,14 @@ nav ul{
     font-size: 1.5em;
 }
 
-nav ul li{
+nav ul li a{
     background-color: peru;
     display: block;
     border: 2px solid black;
-    border-radius: 5em;
-    padding: 0.2em
+    border-radius: 0.5em;
+    padding: 0.2em;
 }
 
-header{
-    display: block;
-    border: 2px solid black;
-    background-image: url("../images/selva_800x600_12_3.gif");
-    height: 100px;
-}
 
 header h1{
     color: #556b2f;
@@ -66,10 +61,28 @@ main section ul li {
 section{
     display: block;
     border: 2px solid black;
+    border-radius: 1em;
     padding: 0.2em;
+    background-color: peru;
+    margin-top: 1em;
 }
 
+p{
+    font-size: larger;
+}
+
+section{
+    padding: 1em;
+}
+
+
 a:link {color: black;}  
-a:visited {color: black}  
-a:hover {color: #556b2f}  
+a:visited {color: #556b2f;}  
+a:hover {color: black}
 a:active {color: black}  
+
+nav ul li a:hover{
+    background-color: #556b2f;
+    color: black;
+    transition: all 500ms ease;
+}
