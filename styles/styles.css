@@ -9,6 +9,7 @@ nav ul{
     display:flex;
     justify-content: end;
     font-size: 1.5em;
+    list-style: none;
 }
 
 nav ul li a{
@@ -19,6 +20,9 @@ nav ul li a{
     padding: 0.2em;
 }
 
+nav ul li{
+    margin-right: 2em;
+}
 
 header h1{
     color: #556b2f;
@@ -27,14 +31,19 @@ header h1{
 header a{
     text-decoration: none;
 }
+  
+header{
+    display: flex;
+    justify-content: flex-start;
+}
 
 main section > div {
     display: flex;
     justify-content: flex-start;
 }
 
-nav ul li{
-    margin-right: 2em;
+main section ul li {
+    color: black;
 }
 
 h1{
@@ -44,18 +53,12 @@ h1{
     border-radius: 5em;
     width: auto;
     background-color: peru;
+    animation: greenandperu 2s linear infinite
 }
-    
-header{
-    display: flex;
-    justify-content: flex-start;
-}
+
 
 h2, ul {
     color: #556b2f;
-}
-main section ul li {
-    color: black;
 }
 
 section{
@@ -67,22 +70,60 @@ section{
     margin-top: 1em;
 }
 
-p{
-    font-size: larger;
+section div div{
+    margin-left: 1em;
 }
 
 section{
     padding: 1em;
 }
 
+img{
+    display: block;
+    border-radius: 1em;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+#special-gif{
+    margin-left: 45em;
+}
+
+/* Bij de row class kreeg ik hulp van mijn vader */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row div{
+    display: block;
+}
 
 a:link {color: black;}  
 a:visited {color: #556b2f;}  
-a:hover {color: black}
-a:active {color: black}  
+a:hover {
+    color: black;
+    transition: all 500ms ease;
+}
+ 
 
 nav ul li a:hover{
     background-color: #556b2f;
     color: black;
     transition: all 500ms ease;
+    padding: 0.5em;
+}
+
+@keyframes greenandperu {
+    0% {
+        color: #556b2f;
+      }
+    50% {
+        color: peru;
+      }
+    100% {
+        color: #556b2f;
+      }
 }
